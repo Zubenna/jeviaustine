@@ -1,0 +1,46 @@
+.itemBox {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.setImg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  /* width: 50%; */
+}
+
+.setMsg {
+  position: absolute;
+  color: #fff;
+  margin-top: 15em;
+  width: 80em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .next,
+.prev {
+  width: 7vw;
+  height: 12vh;
+  color: #fff;
+  font-size: 2.5em;
+  position: absolute;
+  top: 40vh;
+  z-index: 10;
+  background: transparent;
+  cursor: pointer;
+}
+
+.prev {
+  left: 8vw;
+}
+
+.next {
+  right: 8vw;
+} */

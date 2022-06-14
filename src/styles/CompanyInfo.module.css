@@ -1,0 +1,10 @@
+.setInfo {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 5em;
+  padding: 0 3.2em;
+}
+
+.setInfo p {
+  font-size: 1.1em;
+}

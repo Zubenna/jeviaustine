@@ -1,0 +1,42 @@
+.footerBox {
+  margin: 2em auto 0;
+  height: 90vh;
+  background-color: #1e1e1c;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.itemBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5em 3.5em 0 3.5em;
+}
+
+.itemBox a {
+  text-decoration: none;
+}
+
+.itemBox span {
+  font-size: 0.8em;
+}
+
+.boxOne {
+  flex: 2;
+  padding-right: 2em;
+}
+
+.boxTwo,
+.boxThree,
+.boxFour {
+  flex: 1;
+}
+
+.boxTwo,
+.boxThree {
+  padding-right: 2em;
+}
+
+.copyright {
+  text-align: center;
+  color: gray;
+  margin-top: 5em;
+}

@@ -1,0 +1,15 @@
+.leftDim,
+.rightDim {
+  width: 4%;
+  height: 154em;
+  background-color: rgb(226, 222, 222);
+  position: absolute;
+}
+
+.leftDim {
+  left: 0;
+}
+.rightDim {
+  right: 0;
+  top: 0;
+}
