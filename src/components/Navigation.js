@@ -42,7 +42,7 @@ const Navigation = () => {
         <Navbar.Toggle className="bg-dark" />
         <Navbar.Collapse className={Style.moveRight}>
           <Nav>
-            <Nav.Link className="text-secondary" href="">
+            <Nav.Link className="text-secondary" href="/">
               HOME
             </Nav.Link>
             <Nav.Link className="text-secondary" href="">
@@ -86,7 +86,7 @@ const Navigation = () => {
             <Nav.Link className="text-secondary" href="">
               NEWS
             </Nav.Link>
-            <Nav.Link className="text-secondary" href="">
+            <Nav.Link className="text-secondary" href="contact">
               CONTACT
             </Nav.Link>
           </Nav>
