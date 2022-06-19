@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaVimeoV } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
-    <div className={Style.footerBox} style={{ width: '92%' }}>
+    <div className={Style.footerBox} style={{ width: '100%' }}>
       <div className={Style.itemBox}>
         <div className={Style.boxOne}>
           <span className="text-white">ABOUT</span>

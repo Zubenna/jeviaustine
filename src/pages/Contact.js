@@ -4,11 +4,13 @@ import Style from '../styles/Contact.module.css';
 import ContactInfo from '../components/ContactInfo';
 const Contact = () => {
   return (
-    <div>
+    <div className={Style.contactBox}>
       <div className={Style.leftDim}></div>
-      <Navigation />
-      <ContactInfo />
-      <Footer />
+      <div className={Style.deCenter}>
+        <Navigation />
+        <ContactInfo />
+        <Footer />
+      </div>
       <div className={Style.rightDim}></div>
     </div>
   );

@@ -2,6 +2,7 @@ import Style from '../styles/Navigation.module.css';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import logo from '../images/JEVILOGO.png';
 import { FaCaretRight } from 'react-icons/fa';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Navigation = () => {
   const navDropdownInfo = (
@@ -24,24 +25,27 @@ const Navigation = () => {
         bg="light"
         variant="dark"
         sticky="top"
-        expand="sm"
+        expand="md"
         collapseOnSelect
         className="mx-auto"
-        style={{ width: '92%' }}
+        style={{ width: '100%' }}
       >
         <Navbar.Brand>
           <div className={Style.setLogo}>
             <img src={logo} width="" height="" alt="logo" />
             <div className={Style.companyBox}>
-              <span className={Style.companyName}>JEVIAUSTINE</span>
+              <span className={Style.companyName}>JEVIAUSTIN</span>
               <span className={Style.subName}>International Coy. Ltd</span>
             </div>
           </div>
         </Navbar.Brand>
 
-        <Navbar.Toggle className="bg-dark" />
-        <Navbar.Collapse className={Style.moveRight}>
-          <Nav>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          className="bg-dark"
+        />
+        <Navbar.Collapse id="responsive-navbar-nav" className={Style.moveRight}>
+          <Nav className="mr-auto">
             <Nav.Link className="text-secondary" href="/">
               HOME
             </Nav.Link>

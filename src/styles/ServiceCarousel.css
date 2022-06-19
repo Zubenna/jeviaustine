@@ -6,6 +6,10 @@
 .setImg {
 }
 
+.setServiceBox {
+  margin: 10em auto 0 auto;
+}
+
 .next,
 .prev {
   width: 5vw;
@@ -13,7 +17,7 @@
   color: #000;
   font-size: 1.8em;
   position: absolute;
-  top: 41vh;
+  top: 46%;
   z-index: 10;
   background: #fff;
   cursor: pointer;
@@ -31,4 +35,13 @@
 }
 .slick-list {
   margin: 0 -10px;
+}
+
+.card-body {
+  height: 18em;
+}
+
+.card-body a {
+  position: absolute;
+  bottom: 1em;
 }

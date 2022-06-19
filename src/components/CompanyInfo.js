@@ -2,7 +2,7 @@ import TransformerPic from '../images/serviceTwo.jpg';
 import Style from '../styles/CompanyInfo.module.css';
 const CompanyInfo = () => {
   return (
-    <div className={Style.setInfo} style={{ width: '92%' }}>
+    <div className={Style.setInfo} style={{ width: '100%' }}>
       <div className="pr-2" style={{ width: '50%' }}>
         {' '}
         <img

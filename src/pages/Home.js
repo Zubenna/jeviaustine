@@ -7,13 +7,15 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   return (
-    <div className="">
+    <div className={Style.homeBox}>
       <div className={Style.leftDim}></div>
-      <Navigation />
-      <MainCarousel />
-      <ServiceCarousel />
-      <CompanyInfo />
-      <Footer />
+      <div className={Style.deCenter}>
+        <Navigation />
+        <MainCarousel />
+        <ServiceCarousel />
+        <CompanyInfo />
+        <Footer />
+      </div>
       <div className={Style.rightDim}></div>
     </div>
   );

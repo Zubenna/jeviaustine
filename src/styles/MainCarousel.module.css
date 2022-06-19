@@ -1,7 +1,7 @@
 .itemBox {
   width: 100%;
-  height: 90vh;
-  object-fit: cover;
+  height: 100vh;
+  /* margin-bottom: 5em; */
 }
 
 .setImg {
@@ -14,14 +14,37 @@
   /* width: 50%; */
 }
 
-.setMsg {
-  position: absolute;
-  color: #fff;
-  margin-top: 15em;
-  width: 80em;
+.msgBox {
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background-color: rgb(151, 151, 160); */
+}
+
+#slideOne,
+#slideFour {
+  margin-bottom: 18%;
+}
+
+#slideTwo {
+  margin-bottom: 22%;
+}
+
+#slideThree {
+  margin-bottom: 21%;
+}
+
+.msgBox h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 4em;
+}
+
+.msgBox p {
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  padding: 0.5em;
 }
 
 /* .next,
@@ -33,7 +56,7 @@
   position: absolute;
   top: 40vh;
   z-index: 10;
-  background: transparent;
+  background: #000;
   cursor: pointer;
 }
 

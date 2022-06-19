@@ -1,15 +1,13 @@
+.contactBox {
+  display: flex;
+}
+
 .leftDim,
 .rightDim {
   width: 4%;
-  height: 95em;
-  background-color: rgb(226, 222, 222);
-  position: absolute;
+  background-color: rgb(213, 213, 214);
 }
 
-.leftDim {
-  left: 0;
-}
-.rightDim {
-  right: 0;
-  top: 0;
+.deCenter {
+  width: 92%;
 }

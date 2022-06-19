@@ -1,27 +1,5 @@
-/* /* .comp-name {
-    color: #b40d04;
-} */
 
-/* .mainBody {
-  width: 100%;
-  background-color: gray;
-} */
-
-/* .leftDim,
-.rightDim {
-  width: 4%;
-  height: 100vh;
-  background-color: rgb(161, 37, 37);
-  position: absolute;
-  z-index: 20;
+body, html {
+    
+font-family: 'Roboto', sans-serif;
 }
-
-.leftDim {
-  left: 0;
-  bottom: 0;
-}
-.rightDim {
-  right: 0;
-  top: 0;
-  bottom: 0;
-} */

@@ -1,4 +1,8 @@
 import Style from '../styles/ContactInfo.module.css';
+import { useRef } from 'react';
+import Swal from 'sweetalert2';
+import emailjs from '@emailjs/browser';
+
 const ContactInfo = () => {
   const myBackGround = {
     backgroundImage: 'url(/Welcome.png)',
@@ -8,19 +12,51 @@ const ContactInfo = () => {
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
   };
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAILJS_USER_ID
+      )
+      .then(
+        (result) => {
+          Swal.fire({
+            icon: 'success',
+            title: 'Message Sent Successfully',
+          });
+        },
+        (error) => {
+          Swal.fire({
+            icon: 'error',
+            title: 'Ooops, something went wrong',
+            text: error.text,
+          });
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <div>
       <div style={myBackGround}></div>
-      <div className={Style.formBox} style={{ width: '92%' }}>
-        <form className={Style.form}>
+      <div className={Style.formBox} style={{ width: '100%' }}>
+        <form ref={form} onSubmit={sendEmail} className={Style.form}>
           <div className="mb-2 d-flex">
             <label className="">Full Name</label>
             <span style={{ color: '#ff0000' }}>*</span>
           </div>
           <input
             type="text"
-            placeholder="Full name"
+            placeholder="Your name"
             className={Style.regInput}
+            name="user_name"
           />
           <div className="mb-2 d-flex">
             <label className="">Email</label>
@@ -28,30 +64,39 @@ const ContactInfo = () => {
           </div>
           <input
             type="email"
-            placeholder="Email Address"
+            placeholder="Your email address"
             className={Style.regInput}
+            name="user_email"
           />
-          <label className="mb-2">Phone</label>
+          <div className="mb-2 d-flex">
+            <label className="">Subject</label>
+            <span style={{ color: '#ff0000' }}>*</span>
+          </div>
           <input
             type="text"
-            placeholder="Phone number"
+            placeholder="Subject"
             className={Style.regInput}
+            name="user_subject"
           />
           <div className="mb-2 d-flex">
             <label className="">Message</label>
             <span style={{ color: '#ff0000' }}>*</span>
           </div>
           <input
-            type="textarea"
+            type="text"
             placeholder="Enter message"
             className={Style.addInput}
+            name="message"
           />
           <div className="mb-4">
-            <a href="#" className="btn btn-primary">
-              Send Message
-            </a>
+            <input
+              className="btn btn-primary"
+              type="submit"
+              value="Send Message"
+            />
           </div>
         </form>
+
         <div className={Style.addBox}>
           <h5>Contact Info</h5>
 
