@@ -49,7 +49,7 @@ const Navigation = () => {
             <Nav.Link className="text-secondary" href="/">
               HOME
             </Nav.Link>
-            <Nav.Link className="text-secondary" href="">
+            <Nav.Link className="text-secondary" href="/about">
               ABOUT
             </Nav.Link>
             <NavDropdown id={Style.shiftDown} menuVariant="" title="SERVICES">
@@ -90,7 +90,7 @@ const Navigation = () => {
             <Nav.Link className="text-secondary" href="">
               NEWS
             </Nav.Link>
-            <Nav.Link className="text-secondary" href="contact">
+            <Nav.Link className="text-secondary" href="/contact">
               CONTACT
             </Nav.Link>
           </Nav>
