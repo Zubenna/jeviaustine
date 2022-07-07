@@ -5,6 +5,50 @@
   padding: 0 3.2em;
 }
 
+.setDivLeft,
+.setDivRight {
+  width: 50%;
+}
+
+.setDivRight {
+  padding-left: 1em;
+}
+
+.setDivLeft {
+  padding-right: 1em;
+}
+
 .setInfo p {
   font-size: 1.1em;
+}
+
+@media (max-width: 575.9px) {
+  .setInfo {
+    flex-direction: column;
+    margin-top: 2em;
+    padding: 0 1em;
+  }
+
+  .setInfo h2 {
+    margin: 1em 0;
+    font-size: 1.2em;
+  }
+
+  .setDivLeft,
+  .setDivRight {
+    width: 100%;
+  }
+
+  .setDivLeft {
+    display: flex;
+    justify-content: center;
+  }
+
+  .setDivRight {
+    text-align: left;
+  }
+
+  .setInfo.img {
+    width: 100%;
+  }
 }

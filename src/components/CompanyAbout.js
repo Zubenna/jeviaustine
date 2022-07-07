@@ -14,7 +14,7 @@ const CompanyAbout = () => {
     <div>
       <div style={myBackGround}></div>
       <div className={Style.setInfo} style={{ width: '100%' }}>
-        <div className="pr-2" style={{ width: '50%' }}>
+        <div className={Style.setDivLeft}>
           {' '}
           <img
             src={TransformerPic}
@@ -23,7 +23,7 @@ const CompanyAbout = () => {
             alt="..."
           />
         </div>
-        <div className="pl-2" style={{ width: '50%' }}>
+        <div className={Style.setDivRight}>
           <h2>Jeviaustin International Company Limited</h2>
           <p className="fw-light text-muted">
             As a company, Jevi Austin International Company Limited are

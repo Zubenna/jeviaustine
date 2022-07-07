@@ -3,7 +3,7 @@ import Style from '../styles/CompanyInfo.module.css';
 const CompanyInfo = () => {
   return (
     <div className={Style.setInfo} style={{ width: '100%' }}>
-      <div className="pr-2" style={{ width: '50%' }}>
+      <div className={Style.setDivLeft}>
         {' '}
         <img
           src={TransformerPic}
@@ -12,7 +12,7 @@ const CompanyInfo = () => {
           alt="..."
         />
       </div>
-      <div className="pl-2" style={{ width: '50%' }}>
+      <div className={Style.setDivRight}>
         <h2>Jeviaustin International Company Limited</h2>
         <p className="fw-light text-muted">
           As a company, Jevi Austin International Company Limited are ethically,

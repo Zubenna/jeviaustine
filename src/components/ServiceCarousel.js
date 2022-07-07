@@ -26,6 +26,35 @@ const ServiceCarousel = () => {
     arrows: true,
     prevArrow: <ArrowLeft />,
     nextArrow: <ArrowRight />,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          vertical: false,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          vertical: false,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          vertical: false,
+          arrows: false,
+        },
+      },
+    ],
   };
   return (
     <div className="setServiceBox" style={{ width: '100%' }}>
@@ -36,22 +65,18 @@ const ServiceCarousel = () => {
           <div className="card-body">
             <h5 className="card-title">Transformer Installation </h5>
             <p className="card-text">
-              Electrical transformerss have to be installed with the utmost care 
-              and precaution else they could lead to internal damage of your equipment.
-              We follow all the safety precautions and provide the required safety equipment to all of your
-              construction workers which handle the transfromer.
-
+              Electrical transformers have to be installed with the utmost care
+              and precaution else they could lead to internal damage of your
+              equipment. We follow all the safety precautions and provide the
+              required safety equipment to all of your construction workers
+              which handle the transfromer.
             </p>
-       
-            <a href="#" className="btn btn-primary">
+
+            <Link to="/" className="btn btn-primary">
               LEARN MORE
-            </a>
-            {/* <Link to="/" className="btn btn-primary">
-              LEARN MORE
-            </Link> */}
+            </Link>
           </div>
-          </div>
-       
+        </div>
 
         <div className="card" style={{ width: '18rem' }}>
           <img src={serviceOne} className="card-img-top" alt="..." />
@@ -61,9 +86,6 @@ const ServiceCarousel = () => {
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
-            {/* <a href="#" className="btn btn-primary">
-              LEARN MORE
-            </a> */}
             <Link to="/" className="btn btn-primary">
               LEARN MORE
             </Link>
@@ -75,16 +97,13 @@ const ServiceCarousel = () => {
           <div className="card-body">
             <h5 className="card-title">Engineering Services</h5>
             <p className="card-text">
-              We offer specialized engineering/technical support services 
-              to both companies and individual to enable them achieve their iintended goals.
-
+              We offer specialized engineering/technical support services to
+              both companies and individual to enable them achieve their
+              iintended goals.
             </p>
-            <a href="#" className="btn btn-primary">
+            <Link to="/" className="btn btn-primary">
               LEARN MORE
-            </a>
-            {/* <Link to="/" className="btn btn-primary">
-              LEARN MORE
-            </Link> */}
+            </Link>
           </div>
         </div>
 
@@ -93,34 +112,30 @@ const ServiceCarousel = () => {
           <div className="card-body">
             <h5 className="card-title">Welding and Fabrication</h5>
             <p className="card-text">
-              JeviAustine International Company Ltd welding engineers have the experience and knowledge to develop and qualify customized 
-              welding procedure specifications (WPS) that are compliant to current codes, standards and applicable service conditons.
+              JeviAustine International Company Ltd welding engineers have the
+              experience and knowledge to develop and qualify customized welding
+              procedure specifications (WPS) that are compliant to current
+              codes, standards and applicable service conditons.
             </p>
-            <a href="#" className="btn btn-primary">
+            <Link to="/" className="btn btn-primary">
               LEARN MORE
-            </a>
-            {/* <Link to="/" className="btn btn-primary">
-              LEARN MORE
-            </Link> */}
+            </Link>
           </div>
         </div>
 
-        {/* <div className={Style.setMargin}> */}
         <div className="card" style={{ width: '18rem' }}>
           <img src={serviceThree} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">Haulage/Logistics</h5>
             <p className="card-text">
-             The company has metamorphosed from a one truck company into its 
-             prsent status where it has fleet of branded trucks, currently based in 
-             Port Harcourt with satellite operation acrooss various locations in Nigeria.
+              The company has metamorphosed from a one truck company into its
+              prsent status where it has fleet of branded trucks, currently
+              based in Port Harcourt with satellite operation acrooss various
+              locations in Nigeria.
             </p>
-            <a href="#" className="btn btn-primary">
+            <Link to="/" className="btn btn-primary">
               LEARN MORE
-            </a>
-            {/* <Link to="/" className="btn btn-primary">
-              LEARN MORE
-            </Link> */}
+            </Link>
           </div>
         </div>
 
@@ -129,16 +144,13 @@ const ServiceCarousel = () => {
           <div className="card-body">
             <h5 className="card-title">Marine Logistics and Leasing</h5>
             <p className="card-text">
-             We offer a complete range of offshore support vessels of modern design,
-             incorporating a modular approach and a high degree of standardisation by  
-             using excellent quality.
+              We offer a complete range of offshore support vessels of modern
+              design, incorporating a modular approach and a high degree of
+              standardisation by using excellent quality.
             </p>
-            <a href="#" className="btn btn-primary">
+            <Link to="/" className="btn btn-primary">
               LEARN MORE
-            </a>
-            {/* <Link to="/" className="btn btn-primary">
-              LEARN MORE
-            </Link> */}
+            </Link>
           </div>
         </div>
       </Slider>

@@ -1,11 +1,3 @@
-.itemBox {
-  /* width: 100%;
-    height: 100vh; */
-}
-
-.setImg {
-}
-
 .setServiceBox {
   margin: 10em auto 0 auto;
 }
@@ -41,7 +33,13 @@
   height: 18em;
 }
 
-.card-body a {
+.card-body .btn {
   position: absolute;
   bottom: 1em;
+}
+
+@media (max-width: 576px) {
+  .card-body .btn {
+    right: 1em;
+  }
 }

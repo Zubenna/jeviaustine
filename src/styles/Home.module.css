@@ -8,16 +8,6 @@
   background-color: rgb(213, 213, 214);
 }
 
-.leftDim {
-  /* left: 0; */
-  /* flex: 1; */
-}
-.rightDim {
-  /* flex: 1; */
-  /* right: 0; */
-  /* top: 0; */
-}
-
 .deCenter {
   width: 92%;
 }

@@ -38,5 +38,35 @@
 .copyright {
   text-align: center;
   color: gray;
-  margin-top: 5em;
+  margin: 0;
+  padding-top: 20vh;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .itemBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575.9px) {
+  .itemBox {
+    flex-direction: column;
+  }
+  .footerBox {
+    height: auto;
+  }
+
+  .boxTwo {
+    margin-top: 2em;
+  }
+
+  .boxThree,
+  .boxFour {
+    margin-top: 1em;
+  }
+
+  .copyright {
+    padding: 1em 0.5em;
+  }
 }
