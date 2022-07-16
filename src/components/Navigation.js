@@ -35,7 +35,7 @@ const Navigation = () => {
             <img src={logo} width="" height="" alt="logo" />
             <div className={Style.companyBox}>
               <span className={Style.companyName}>JEVIAUSTIN</span>
-              <span className={Style.subName}>International Coy. Ltd</span>
+              <span className={Style.subName}>International Co. Ltd</span>
             </div>
           </div>
         </Navbar.Brand>

@@ -1,4 +1,4 @@
-import TransformerPic from '../images/serviceTwo.jpg';
+import JeviPic from '../images/Jeviaustin-home.jpeg';
 import Style from '../styles/CompanyAbout.module.css';
 const CompanyAbout = () => {
   const myBackGround = {
@@ -16,12 +16,7 @@ const CompanyAbout = () => {
       <div className={Style.setInfo} style={{ width: '100%' }}>
         <div className={Style.setDivLeft}>
           {' '}
-          <img
-            src={TransformerPic}
-            style={{ width: '90%' }}
-            className=""
-            alt="..."
-          />
+          <img src={JeviPic} style={{ width: '90%' }} className="" alt="..." />
         </div>
         <div className={Style.setDivRight}>
           <h2>Jeviaustin International Company Limited</h2>

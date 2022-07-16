@@ -38,6 +38,15 @@
   bottom: 1em;
 }
 
+@media (min-width: 576px) and (max-width: 640px) {
+  .setServiceBox {
+    margin-top: 18em;
+  }
+  .card-body {
+    height: 20em;
+  }
+}
+
 @media (max-width: 576px) {
   .card-body .btn {
     right: 1em;
